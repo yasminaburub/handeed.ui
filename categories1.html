@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-gap: 120px;
+            grid-template-columns: repeat(2, 1fr);
+            
+            border-radius:20px;
+            margin:50px;
+            margin-top:150px;
+            margin-right:100px;
+            margin-left:100px;
+            position:relative;
+        }
+        .item {
+            background-color: rgba(165, 165, 152, 0.1);
+            border: 1px solid black;
+            text-align: center;
+            height: 190px;
+            padding: 5px;
+        }
+        .item:hover{
+            border:2px solid darkred;
+           
+        }
+        .pic{
+            position:absolute;
+            width:400px;
+            height:auto;
+            top:-90px;
+            left:-50px;
+
+        }
+        .logo{
+            width:200px;
+            height:130px;
+            
+        }
+        p{
+            font-size:20px;
+            
+            margin-top:2px;
+            letter-spacing:2px;
+            color:darkred;
+            font-family:cursive;
+        }
+        .pic1{
+            position:absolute;
+            width:300px;
+            height:auto;
+            top:-3px;
+            left:600px;
+        }
+
+    </style>
+  
+
+</head>
+<body>
+
+    <img src="pic4.png" class="pic1" />
+    <div class="container">
+        <div class="item" id="next">
+            <p>DEVELOPER</p>
+            <img src="logo5.jpg" class="logo" />
+        </div>
+        <div class="item"> <p> DEVELOPER</p><img src="logo6.jpg" class="logo" /></div>
+
+        <div class="item"> <p> DEVELOPER</p> <img src="logo7.jpg" class="logo" /></div>
+        <div class="item">  <p> DEVELOPER</p><img src="logo8.jpg" class="logo" /></div>
+        <div class="item">  <p> DEVELOPER</p><img src="logo1.jpg" class="logo" /></div>
+        <div class="item">  <p> DEVELOPER</p><img src="logo12.jpg" class="logo" /></div>
+    </div>
+
+    <script>
+     document.getElementById("next").onclick = function () {
+         window.location.href = "products.html";
+     };
+    </script>
+
+</body>
+</html>

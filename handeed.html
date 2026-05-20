@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .head {
+            height: 150px;
+            padding-top: 0px;
+            margin: 0px;
+        }
+       
+
+        .pic1 {
+            height: 360px;
+            position: absolute;
+            left: 29%;
+            top: -90px;
+        }
+       
+        .container-swiper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .card-list .card-item {
+            list-style: none;
+        }
+
+            .card-list .card-item .card-link {
+                width: 300px;
+                display: block;
+                background-color: rgba(233, 232, 204, 0.21);
+                padding: 10px;
+                
+                text-decoration: none;
+                border: 2px solid transparent;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+                transition: 0.2s ease;
+                border: 1px solid black;
+            }
+
+                .card-list .card-item .card-link:hover {
+                    border-color: darkred;
+                    border-width:3px;
+                    margin-top:-5px;
+                    
+                }
+
+        .card-list .card-link .card-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 10px;
+           
+        }
+
+
+        .card-list .card-link .badge {
+            color: darkred;
+            letter-spacing:2px;
+      
+            margin: 16px 0 18px;
+            padding: 8px 16px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            background: white;
+            width: fit-content;
+            border-radius: 50px;
+        }
+       
+        .card-wrapper{
+            width:84%;
+            margin-left:110px;
+            padding:20px 10px;
+            overflow:hidden;
+        }
+        .card-wrapper .swiper-pagination-bullet{
+            height:13px;
+            width:13px;
+            opacity:0.8;
+            background-color:black;
+            
+
+        }
+        .swiper-button-prev{
+            color: black;
+            margin-left:40px;
+        }
+        .swiper-button-next {
+            color: black;
+            margin-right: 80px;
+        }
+        .list1 {
+            display: inline-flex;
+            padding: 10px;
+            margin-left:110px;
+        }
+        .l1{
+            display:inline;
+            padding:30px;
+            margin-left:20px;
+            
+            
+        }
+            .l1:hover {
+                text-decoration: underline;
+            }
+        .l2 {
+            display: inline;
+            padding: 30px;
+            
+        }
+        .l2:hover{
+            text-decoration:underline;
+            
+        }
+        .l4 {
+            display: inline;
+            padding: 30px;
+
+        }
+            .l4:hover {
+                text-decoration: underline;
+            }
+
+        .l3 {
+            display: inline;
+            margin-left: 580px;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 12px;
+            padding: 10px;
+            color: darkred;
+          
+            font-weight: bold;
+        }
+        .login{
+            position:absolute;
+            width:150px;
+            height:auto;
+            position:absolute;
+            left:1015px;
+            top:30px;
+            
+        }
+        .card-button{
+            background-color:white;
+            border-radius:10px;
+            width:30px;
+            height:30px;
+            color:darkred;
+            border:none;
+            font-weight:bold;
+            position:relative;
+            left:200px;
+            
+        }
+        .card-title{
+            color:black;
+            font-size:15px;
+            letter-spacing:1px;
+        }
+        .b1{
+            position:absolute;
+            width:170px;
+            height:auto;
+            left:665px;
+            top:63px;
+            
+        }
+        #goToPage{
+            position: absolute;
+             width:300px;
+            left: 230px;
+            top: 120px;
+            
+            
+        }
+         
+
+            .about {
+                font-size: 13px;
+                display: flex;
+                padding: 10px;
+                margin-top: 42px;
+            }
+        .one{
+            padding:40px;
+            line-height:30px;
+            width:1000px;
+            padding-right:50px;
+            text-align:left;
+            padding-top:20px;
+        }
+        .two {
+            padding: 40px;
+            line-height: 30px;
+            width: 1000px;
+            padding-top: 20px;
+        }
+        .aboutus{
+            position:absolute;
+            width:400px;
+            height:auto;
+            top:545px;
+            left:120px;
+        }
+        .arabic {
+            position: absolute;
+            width: 400px;
+            height: auto;
+            top: 545px;
+            left: 950px;
+        }
+    /* Responsive Design */
+        @media (max-width: 480px) {
+            .list1 {
+                display: inline-block;
+                padding: 10px;
+                margin-left: 80px;
+            }
+
+            .l1 {
+                display: block;
+                padding: 20px;
+                margin-left: 20px;
+            }
+
+                .l1:hover {
+                    text-decoration: underline;
+                }
+
+            .l2 {
+                display: block;
+                padding: 20px;
+            }
+
+                .l2:hover {
+                    text-decoration: underline;
+                }
+
+            .l4 {
+                display: block;
+                padding: 20px;
+            }
+
+                .l4:hover {
+                    text-decoration: underline;
+                }
+
+            .l3 {
+                display: block;
+                margin-left: 530px;
+                padding: 20px;
+                border: 1px solid black;
+                border-radius: 12px;
+                padding: 10px;
+                color: darkred;
+                font-weight: bold;
+            }
+
+            .login {
+                position: absolute;
+                width: 150px;
+                height: auto;
+                position: absolute;
+                left: 800px;
+                top: 30px;
+            }
+            
+
+            
+        
+
+ 
+        }
+   
+
+    </style>
+
+</head>
+<body>
+    <div class="head">
+        <ul class="list1">
+            <li class="l1">HOME </li>
+            <li class="l2">ABOUT  </li>
+            <li class="l4">CONTACT US  </li>
+        </ul>
+        <p class="l3"> LOG IN/SIGN IN</p>
+        <img src="h7.png" class="pic1">
+        <img src="madeinjo.png" class="b1" />
+
+
+    </div>
+    <br>
+    <br>
+
+
+    <img src="about.png" class="login" />
+
+
+
+    <img src="shop4.png" id="goToPage" />
+    
+    <div class="container swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide" id="next">
+                    <a href="#" class="card-link">
+                        <img src="logo5.jpg" alt="Card Image"
+                             class="card-image">
+                        <p class="badge">HOME LAND</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                        <button class="card-button">
+                            >
+                        </button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide three">
+                    <a href="#" class="card-link">
+                        <img src="logo13.jpg" alt="Card Image"
+                             class="card-image">
+                        <p class="badge">Developer</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                        <button class="card-button
+material-symbols-rounded">
+                            >
+                        </button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="logo3.jpg" alt="Card Image"
+                             class="card-image">
+                        <p class="badge">Developer</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                        <button class="card-button
+material-symbols-rounded">
+                            >
+                        </button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="logo6.jpg" alt="Card Image"
+                             class="card-image">
+                        <p class="badge">Developer</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                        <button class="card-button
+material-symbols-rounded">
+                            >
+                        </button>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("goToPage").onclick = function () {
+            window.location.href = "categories1.html";
+        };
+    </script>
+    <br />
+    <hr />
+    <img src="aboutus.png" class="aboutus" />
+    <img src="arabic.png" class="arabic" />
+    <div class="about">
+        <div class="one">
+            The Jordanian website is dedicated to showcasing local businesses that sell traditional
+            and cultural products commonly found in downtown Amman. From handcrafted jewelry and embroidered clothing to unique ceramics and artisanal goods,
+            the platform highlights the rich heritage of Jordan through the crafts and artistry of its people. Each business is carefully selected to offer authentic
+            products that reflect the country’s vibrant culture. Users can explore a variety of items, learn about the artisans, and even find information about the shops'
+            locations in the bustling markets of downtown Amman. The website serves as a bridge between local craftsmanship and customers who appreciate the cultural treasures of Jordan
+        </div>
+        <div class="two">الموقع الأردني مخصص لعرض الأعمال المحلية التي تبيع المنتجات التقليدية والثقافية التي يمكن العثور عليها في وسط مدينة عمان. من المجوهرات المصنوعة يدويًا والملابس المطرزة إلى السيراميك الفريد والمنتجات الحرفية، يُبرز الموقع التراث الغني للأردن من خلال الحرف والفن التي يقدمها أبناء الشعب. يتم اختيار كل عمل بعناية لتقديم منتجات أصلية تعكس الثقافة النابضة بالحياة في البلاد. يمكن للمستخدمين استكشاف مجموعة متنوعة من العناصر، والتعرف على الحرفيين، وحتى العثور على معلومات حول مواقع المتاجر في الأسواق المزدحمة بوسط عمان. يعد الموقع جسرًا بين الحرف المحلية والعملاء الذين يقدرون الكنوز الثقافية الأردنية </div>
+
+
+    </div>
+    <script>
+        document.getElementById("next").onclick = function () {
+            window.location.href = "products.html";
+        };
+    </script>
+</body>
+</html>

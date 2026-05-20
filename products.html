@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-gap: 140px;
+            grid-template-columns: repeat(4, 0.5fr);
+          
+            margin-top: 200px;
+            margin-right: 150px;
+            margin-left: 150px;
+            position: relative;
+        }
+
+        .item {
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+            height: 230px;
+            text-align:center;
+        }
+        .include {
+            height: 160px;
+            background-color: rgba(233, 189, 76, 0.1);
+        }
+        .product{
+            width:150px;
+            height:auto;
+        }
+        .product3{
+            width:120px;
+        }
+        .product2{
+            width:190px;
+        }
+        .new{
+            width:450px;
+            height:auto;
+            position:absolute;
+            left:130px;
+            top:-5px;
+
+        }
+        .new1 {
+            width: 500px;
+            height: auto;
+            position: absolute;
+            left: 850px;
+            top: -30px;
+        }
+        button {
+            background-color: rgba(111, 103, 107, 0.14);
+            color:black;
+            border:none;
+        }
+       
+    </style>
+</head>
+<body>
+   <img src="new.png" class="new" />
+    <img src="logo10.png" class="new1" />
+
+
+    <div class="container">
+        <div class="item"> <div class="include"> <img src="p1.png" class="product" /></div> <br /> Mosaic Art <br /> <button> + </button> <b>$19.99</b> <button> - </button> </div>
+        <div class="item"><div class="include"> <img src="p2.png" class="product" /></div> <br /> Jordanian Shmagh <br /><button> + </button>  <b>$2.99</b> <button> - </button> </div>
+        <div class="item"><div class="include"><img src="p3.png" class="product3" /> </div> <br /> Stickers <br /> <button> + </button>  <b>$1.99</b> <button> - </button> </div>
+        <div class="item"><div class="include"> <img src="p4.png" class="product" /></div> <br /> Wall Clock <br /> <button> + </button>  <b>$6.99</b> <button> - </button> </div>
+        <div class="item"><div class="include"> <img src="p5.png" class="product2" /></div> <br /> KeyChain <br /> <button> + </button>  <b>$1.50</b> <button> - </button> </div>
+        <div class="item"><div class="include"> <img src="p6.png" class="product" /></div> <br /> DEAD SEA Collection <br /> <button> + </button>  <b>$10.50</b> <button> - </button></div>
+        <div class="item"><div class="include"> <img src="p7.png" class="product2" /></div> <br /> Pouch <br /> <button> + </button>  <b>$7.99</b> <button> - </button> </div>
+        <div class="item"><div class="include"> <img src="p8.png" class="product2" /> </div> <br /> Birthday Card <br /> <button> + </button>  <b>$0.99</b> <button> - </button></div>
+
+
+
+
+
+    </div>
+
+</body>
+</html>
